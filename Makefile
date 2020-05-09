@@ -5,13 +5,12 @@ all: build clean
 
 build: wc
 	pdflatex $(DOC)
-	bibier $(NAME)
+	biber $(NAME)
 	pdflatex $(DOC)
 	pdflatex $(DOC)
 
 clean:
 	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml
-
 
 wc:
 	texcount $(DOC) > wc.txt
