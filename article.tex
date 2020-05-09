@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{/home/ray/Documents/latex/uni.bib}
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[margin=2cm]{geometry}
+\usepackage{listings}
+\lstset{
+    basicstyle=\normalsize\ttfamily,
+    columns=flexible,
+    breaklines=true
+}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{20156967}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{<++>}
+\date{<++>}
+\author{Ray Garner}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\section{<++>}
+
+\printbibliography
+
+\paragraph{}
+\lstinputlisting{wc.txt}
+
+\end{document}
+
+
