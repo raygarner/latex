@@ -10,7 +10,7 @@ build: wc
 	pdflatex $(DOC)
 
 clean:
-	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml
+	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml *.out
 
 wc:
 	texcount $(DOC) > wc.txt
