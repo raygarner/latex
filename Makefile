@@ -13,5 +13,5 @@ clean:
 	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml
 
 wc:
-	texcount $(DOC) > wc.txt
-	wc -w src/* >> wc.txt
+	texcount $(DOC) > wc
+	wc -w src/* >> wc
