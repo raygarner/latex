@@ -1,8 +1,9 @@
 \documentclass{article}
 
-\usepackage[backend=biber,sorting=none]{biblatex}
+\usepackage[backend=biber]{biblatex}
 \addbibresource{/home/ray/Documents/latex/uni.bib}
 
+\usepackage[acronym]{glossaries}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage[english]{babel}
@@ -26,6 +27,9 @@
 \rfoot{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
+\makeglossaries
+%glossary entries here
+
 \title{<++>}
 \date{<++>}
 \author{Ray Garner}
@@ -41,6 +45,14 @@
 \section{<++>}
 \paragraph{}
 <++>
+
+
+\addcontentsline{toc}{section}{Acronyms}
+\printglossary[type=\acronymtype]
+
+\addcontentsline{toc}{section}{Glossary}
+\printglossary
+
 
 \printbibliography[heading=bibintoc]
 

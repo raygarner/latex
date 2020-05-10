@@ -6,6 +6,7 @@ all: build clean
 build: wc
 	pdflatex $(DOC)
 	biber $(NAME)
+	makeglossaries $(NAME)
 	pdflatex $(DOC)
 	pdflatex $(DOC)
 
