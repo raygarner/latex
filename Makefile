@@ -1,15 +1,16 @@
 DOC=article.tex
 NAME=article
 
-all: build clean
+all: build
 
-build: wc
+build: clean wc
 	pdflatex $(DOC)
 	biber $(NAME)
 	pdflatex $(DOC)
 	makeglossaries $(NAME)
 	pdflatex $(DOC)
 	pdflatex $(DOC)
+	make clean
 
 clean:
 	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml *.out *.acn *.acr *.alg *.glg *.glo *.gls *.glsdefs *.ist
