@@ -12,6 +12,9 @@ build: clean wc
 	pdflatex $(DOC)
 	make clean
 
+open: build
+	zathura $(NAME).pdf
+
 clean:
 	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml *.out *.acn *.acr *.alg *.glg *.glo *.gls *.glsdefs *.ist
 wc:
